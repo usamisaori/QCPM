@@ -1,18 +1,18 @@
-Try execute mapping on <data_ibm.qasm>: 
+Try execute mapping on <../data/data_ibm.qasm>: 
 Start Timer: [Init Circuit]
-End Timer [Init Circuit]:  0.009999990463256836
+End Timer [Init Circuit]:  0.010411977767944336
 
 Start Timer: [Execute Mapping]
-End Timer [Execute Mapping]:  0.04269671440124512
+End Timer [Execute Mapping]:  0.04251670837402344
 
 Start Timer: [Execute Mapping]
-End Timer [Execute Mapping]:  0.029177427291870117
+End Timer [Execute Mapping]:  0.02972698211669922
 
 Circuit Info: 
  - circuit: x-cx-h-x-cx-cx-cx-cx-cx-cx-cx-cx-x-x-cx-cx-cx-h-rz-cx-h-cx-x-cx-cx-x-cx-cx-h-rz-h-h-x-cx-cx-cx-x-cx-h 
      => total size: [39] (IBM)
  --------------------
- - qubits_num: 4, using gates: [cx,rz,h,x]
+ - qubits_num: 4, using gates: [rz,x,h,cx]
  - circuit depth: 28 - (small)
  - circuit cycle: 61
 

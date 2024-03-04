@@ -13,7 +13,7 @@ file = open('execute_normal_strategy.txt', 'w')
 sys.stdout = file
 
 # load circuit(system: IBM)
-circuit_path = 'data_ibm.qasm'
+circuit_path = '../data/data_ibm.qasm'
 print(f'Try execute mapping on <{circuit_path}>: ')
 
 # call optimize - mapping .. for two rounds.
