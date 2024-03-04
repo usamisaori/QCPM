@@ -1,0 +1,17 @@
+Start Timer: [Init Circuit]
+End Timer [Init Circuit]:  0.00873565673828125
+
+Start Timer: [Execute Mapping]
+End Timer [Execute Mapping]:  0.04211592674255371
+
+Start Timer: [Execute Mapping]
+End Timer [Execute Mapping]:  0.029376506805419922
+
+Circuit Info: 
+ - circuit: x-cx-h-x-cx-cx-cx-cx-cx-cx-cx-cx-x-x-cx-cx-cx-h-rz-cx-h-cx-x-cx-cx-x-cx-cx-h-rz-h-h-x-cx-cx-x-cx-cx-h 
+     => total size: [39] (IBM)
+ --------------------
+ - qubits_num: 4, using gates: [cx,rz,h,x]
+ - circuit depth: 27 - (small)
+ - circuit cycle: 61
+
