@@ -13,7 +13,7 @@ print('Load circuit data and execute mapping: \n')
 mapper = Mapper()
 
 # load circuit(system: IBM)
-circuit_path = 'data_ibm.qasm'
+circuit_path = '../data/data_ibm.qasm'
 print(f'Try execute mapping on <{circuit_path}>: ')
 circuit = Circuit(circuit_path)
 mapper.execute(circuit)

@@ -1,11 +1,11 @@
 Load circuit data and execute mapping: 
 
 Start Timer: [Init Mapper]
-End Timer [Init Mapper]:  0.0014328956604003906
+End Timer [Init Mapper]:  0.0010018348693847656
 
-Try execute mapping on <data_surface.qasm>: 
+Try execute mapping on <../data/data_surface.qasm>: 
 Start Timer: [Init Circuit]
-End Timer [Init Circuit]:  0.023005008697509766
+End Timer [Init Circuit]:  0.02969527244567871
 
 Start Timer: [Execute Mapping]
 
@@ -89,7 +89,7 @@ Pattern: 6
 
 Candidates: 
 
-----End Timer [Find Candidates]:  0.0010006427764892578
+----End Timer [Find Candidates]:  0.0
 
 ----Start Timer: [Generate Plans]
 
@@ -131,7 +131,7 @@ Apply:  Pos: [95, 99] xx => I
 ---------------
 Circuit after: xYeYYzxYeYYeYYeYYeYYeYYeYYeYYeYxxYeYYeYYeYYzZYzzYYeYzYYeYxYeYYeYxYeYYeYYzZYzYeYYzxYeYYeYYeYxYeYYeYYeYYeYYeYYz
 
-----End Timer [apply mapping plan]:  0.0
+----End Timer [apply mapping plan]:  0.0010046958923339844
 
-End Timer [Execute Mapping]:  0.0010006427764892578
+End Timer [Execute Mapping]:  0.0010046958923339844
 

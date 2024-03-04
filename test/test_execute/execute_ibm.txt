@@ -1,11 +1,11 @@
 Load circuit data and execute mapping: 
 
 Start Timer: [Init Mapper]
-End Timer [Init Mapper]:  0.0009999275207519531
+End Timer [Init Mapper]:  0.0
 
-Try execute mapping on <data_ibm.qasm>: 
+Try execute mapping on <../data/data_ibm.qasm>: 
 Start Timer: [Init Circuit]
-End Timer [Init Circuit]:  0.010571956634521484
+End Timer [Init Circuit]:  0.009716987609863281
 
 Start Timer: [Execute Mapping]
 
@@ -92,7 +92,7 @@ Pattern: 6
 Candidates: 
 
 [26, 27, 31]
-----End Timer [Find Candidates]:  0.03953123092651367
+----End Timer [Find Candidates]:  0.04004621505737305
 
 ----Start Timer: [Generate Plans]
 
@@ -138,5 +138,5 @@ Circuit after: xchxccccccccxxccchZchcxccxcchZhhxccccxcch
 
 ----End Timer [apply mapping plan]:  0.0
 
-End Timer [Execute Mapping]:  0.03953123092651367
+End Timer [Execute Mapping]:  0.04004621505737305
 
