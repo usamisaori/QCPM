@@ -1,0 +1,26 @@
+Load circuit data without optimization: 
+
+Try load <../data/data_ibm.qasm>: 
+Start Timer: [Init Circuit]
+End Timer [Init Circuit]:  0.0010001659393310547
+
+Circuit Info: 
+ - circuit: x-cx-h-x-cx-cx-cx-cx-cx-cx-cx-cx-x-x-cx-cx-cx-h-rz-h-cx-h-cx-h-x-cx-cx-x-cx-cx-h-rz-h-cx-h-x-cx-cx-cx-cx-cx-x-cx-x-cx-x-cx-cx-cx-h 
+     => total size: [50] (IBM)
+ --------------------
+ - qubits_num: 4, using gates: [x,cx,h,rz]
+ - circuit depth: 37 - (small)
+ - circuit cycle: 79
+
+Try load <../data/data_surface.qasm>: 
+Start Timer: [Init Circuit]
+End Timer [Init Circuit]:  0.0009999275207519531
+
+Circuit Info: 
+ - circuit: x-ry-cz-ry-ry-z-x-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-cz-ry-x-x-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-z-rz-ry-z-ry-cz-ry-ry-z-ry-cz-ry-ry-z-x-ry-cz-ry-ry-cz-ry-x-ry-cz-ry-ry-cz-ry-ry-z-rz-ry-z-ry-cz-ry-ry-z-x-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-cz-ry-x-ry-cz-ry-x-ry-cz-ry-x-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-z 
+     => total size: [117] (Surface)
+ --------------------
+ - qubits_num: 4, using gates: [x,cz,z,ry,rz]
+ - circuit depth: 75 - (small)
+ - circuit cycle: 146
+
