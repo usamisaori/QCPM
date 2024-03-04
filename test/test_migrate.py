@@ -1,12 +1,8 @@
-# from qcpm import Circuit
+import sys
+sys.path.append('../')
+
 from qcpm.migration import convert
 import json
-
-# circuit_path = '../data/example_test_migration'
-# circuit_path = '../data/test'
-# circuit = Circuit(circuit_path, optimize=False)
-
-# circuit.save('circuit_after', to='Surface')
 
 
 paths = [
@@ -16,7 +12,6 @@ paths = [
     ['../qcpm/pattern/rules/', '/pattern.json'],
     ['../qcpm/expander/rules/', '/expansion.json'],
 ]
-
 
 target = 'Surface'
 
