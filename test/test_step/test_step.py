@@ -1,8 +1,11 @@
+import sys
+sys.path.append('../../')
 from qcpm import Mapper, Circuit
 
 
-# circuit_path = '../data/mult_after_light.qasm'
-# circuit_path = '../data/20QBT_45CYC_.0D1_.4D2_0.qasm'
+originOutput = sys.stdout
+file = open('step_output.txt', 'w')
+sys.stdout = file
 circuit_path = '../data/example.qasm'
 
 
@@ -37,3 +40,5 @@ mapper.execute(circuit, strategy='random', metric='depth')
         - system: output format, "IBM" or "Surface"
 """
 circuit.save('./circuit_after')
+
+sys.stdout = originOutput

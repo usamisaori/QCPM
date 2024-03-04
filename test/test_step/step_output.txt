@@ -1,0 +1,130 @@
+Start Timer: [Init Mapper]
+End Timer [Init Mapper]:  0.001001119613647461
+
+Start Timer: [Init Circuit]
+End Timer [Init Circuit]:  0.03335094451904297
+
+Start Timer: [Execute Mapping]
+
+****************************
+*                          *
+*   Pattern & Candidates   *
+*                          *
+****************************
+----Start Timer: [Find Candidates]
+
+------------ 1 ------------
+Pattern: 1
+    cx [0, 1]
+    cx [0, 1]
+    => 
+    I
+
+
+Candidates: 
+
+
+------------ 2 ------------
+Pattern: 2
+    x [0]
+    x [0]
+    => 
+    I
+
+
+Candidates: 
+
+
+------------ 3 ------------
+Pattern: 3
+    cx [0, 1]
+    cx [1, 2]
+    cx [0, 1]
+    => 
+    cx [0, 2]
+    cx [1, 2]
+
+
+Candidates: 
+
+[74, 75, 76]
+[76, 77, 78]
+
+------------ 4 ------------
+Pattern: 4
+    x [1]
+    cx [0, 1]
+    x [1]
+    => 
+    cx [0, 1]
+
+
+Candidates: 
+
+[224, 225, 226]
+
+------------ 5 ------------
+Pattern: 5
+    cx [1, 2]
+    cx [0, 1]
+    cx [1, 2]
+    => 
+    cx [0, 1]
+    cx [1, 2]
+
+
+Candidates: 
+
+[75, 76, 77]
+
+------------ 6 ------------
+Pattern: 6
+    cx [1, 2]
+    cx [0, 2]
+    cx [0, 1]
+    => 
+    cx [0, 1]
+    cx [1, 2]
+
+
+Candidates: 
+
+----End Timer [Find Candidates]:  0.33110594749450684
+
+----Start Timer: [Generate Plans]
+
+**********************
+*                    *
+*   Generate Plans   *
+*                    *
+**********************
+
+Sorted Candidates: 
+
+[Pos: [74, 75, 76] ccc => cc, Pos: [75, 76, 77] ccc => cc, Pos: [76, 77, 78] ccc => cc, Pos: [224, 225, 226] xcx => c]
+
+----End Timer [Generate Plans]:  0.0010004043579101562
+
+----Start Timer: [apply mapping plan]
+
+**************************
+*                        *
+*   Apply Mapping Plan   *
+*                        *
+**************************
+
+Selected Best Plan: 
+[Pos: [74, 75, 76] ccc => cc, Pos: [224, 225, 226] xcx => c]
+Change: 2, Saving: 3
+
+Circuit before: ctthctccTcTTtccchxhtttcccTcTTtccchhtttcccTcTTtccchhtttcxccTcTTtccchhtttccccccccTcTTtccchhtttcccTcTTtccchhtttcccTcTTtccchhtttcccTcTTtccchhtttcccTcTTtccchhtttcccTcTTtccchhtttcccTcTTtccchhtttcccTcTTtccchhtttcccTcTTtccchhtttcccTxcxTTtccchhtttcccTcTTtccchtttcccTcTTtccch
+---------------
+Apply:  Pos: [74, 75, 76] ccc => cc
+Apply:  Pos: [224, 225, 226] xcx => c
+---------------
+Circuit after: ctthctccTcTTtccchxhtttcccTcTTtccchhtttcccTcTTtccchhtttcxccTcTTtccchhtttcccccccTcTTtccchhtttcccTcTTtccchhtttcccTcTTtccchhtttcccTcTTtccchhtttcccTcTTtccchhtttcccTcTTtccchhtttcccTcTTtccchhtttcccTcTTtccchhtttcccTcTTtccchhtttcccTcTTtccchhtttcccTcTTtccchtttcccTcTTtccch
+
+----End Timer [apply mapping plan]:  0.0010035037994384766
+
+End Timer [Execute Mapping]:  0.33310985565185547
+
