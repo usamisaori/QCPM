@@ -1,0 +1,137 @@
+Load circuit data and execute mapping: 
+
+Start Timer: [Init Mapper]
+End Timer [Init Mapper]:  0.0014328956604003906
+
+Try execute mapping on <data_surface.qasm>: 
+Start Timer: [Init Circuit]
+End Timer [Init Circuit]:  0.023005008697509766
+
+Start Timer: [Execute Mapping]
+
+****************************
+*                          *
+*   Pattern & Candidates   *
+*                          *
+****************************
+----Start Timer: [Find Candidates]
+
+------------ 1 ------------
+Pattern: 1
+    cx [0, 1]
+    cx [0, 1]
+    => 
+    I
+
+
+Candidates: 
+
+
+------------ 2 ------------
+Pattern: 2
+    x [0]
+    x [0]
+    => 
+    I
+
+
+Candidates: 
+
+[95, 99]
+
+------------ 3 ------------
+Pattern: 3
+    cx [0, 1]
+    cx [1, 2]
+    cx [0, 1]
+    => 
+    cx [0, 2]
+    cx [1, 2]
+
+
+Candidates: 
+
+
+------------ 4 ------------
+Pattern: 4
+    x [1]
+    cx [0, 1]
+    x [1]
+    => 
+    cx [0, 1]
+
+
+Candidates: 
+
+
+------------ 5 ------------
+Pattern: 5
+    cx [1, 2]
+    cx [0, 1]
+    cx [1, 2]
+    => 
+    cx [0, 1]
+    cx [1, 2]
+
+
+Candidates: 
+
+
+------------ 6 ------------
+Pattern: 6
+    cx [1, 2]
+    cx [0, 2]
+    cx [0, 1]
+    => 
+    cx [0, 1]
+    cx [1, 2]
+
+
+Candidates: 
+
+----End Timer [Find Candidates]:  0.0010006427764892578
+
+----Start Timer: [Generate Plans]
+
+**********************
+*                    *
+*   Generate Plans   *
+*                    *
+**********************
+
+Sorted Candidates: 
+
+[Pos: [95, 99] xx => I]
+
+Plan: 1
+[Pos: [95, 99] xx => I]
+Change: 1, Saving: 2
+
+..........
+
+Total Plans: 1
+
+----End Timer [Generate Plans]:  0.0
+
+----Start Timer: [apply mapping plan]
+
+**************************
+*                        *
+*   Apply Mapping Plan   *
+*                        *
+**************************
+
+Selected Best Plan: 
+[Pos: [95, 99] xx => I]
+Change: 1, Saving: 2
+
+Circuit before: xYeYYzxYeYYeYYeYYeYYeYYeYYeYYeYxxYeYYeYYeYYzZYzzYYeYzYYeYxYeYYeYxYeYYeYYzZYzYeYYzxYeYYeYYeYxYeYxYeYxYeYYeYYeYYz
+---------------
+Apply:  Pos: [95, 99] xx => I
+---------------
+Circuit after: xYeYYzxYeYYeYYeYYeYYeYYeYYeYYeYxxYeYYeYYeYYzZYzzYYeYzYYeYxYeYYeYxYeYYeYYzZYzYeYYzxYeYYeYYeYxYeYYeYYeYYeYYeYYz
+
+----End Timer [apply mapping plan]:  0.0
+
+End Timer [Execute Mapping]:  0.0010006427764892578
+
