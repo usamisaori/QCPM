@@ -3,10 +3,16 @@ sys.path.append('../../')
 
 from qcpm import Circuit
 
+
+originOutput = sys.stdout
 print('Load circuit data with optimization: \n')
 
+
+file = open('optimize_ibm.txt', 'w')
+sys.stdout = file
+
 # load circuit(system: IBM)
-circuit_path = 'data_ibm.qasm'
+circuit_path = '../data/data_ibm.qasm'
 print(f'Try load and optimize <{circuit_path}>: ')
 circuit = Circuit(circuit_path, optimize=False)
 
@@ -20,11 +26,11 @@ print(circuit.info)
 circuit.save('data_ibm_after.qasm')
 
 
-print('-' * 50 + '\n')
-
+file = open('optimize_surface.txt', 'w')
+sys.stdout = file
 
 # load circuit(system: Surface)
-circuit_path = 'data_surface.qasm'
+circuit_path = '../data/data_surface.qasm'
 print(f'Try load and optimize <{circuit_path}>: ')
 circuit = Circuit(circuit_path, system='Surface', optimize=False)
 
@@ -36,3 +42,5 @@ circuit.optimize() # do optimization
 print(circuit.info)
 
 circuit.save('data_surface_after.qasm')
+
+sys.stdout = originOutput

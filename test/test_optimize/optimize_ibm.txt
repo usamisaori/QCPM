@@ -1,0 +1,22 @@
+Try load and optimize <../data/data_ibm.qasm>: 
+Start Timer: [Init Circuit]
+End Timer [Init Circuit]:  0.0011601448059082031
+
+Circuit: <../data/data_ibm.qasm> without optimization:
+Circuit Info: 
+ - circuit: x-cx-h-x-cx-cx-cx-cx-cx-cx-cx-cx-x-x-cx-cx-cx-h-rz-h-cx-h-cx-h-x-cx-cx-x-cx-cx-h-rz-h-cx-h-x-cx-cx-cx-cx-cx-x-cx-x-cx-x-cx-cx-cx-h 
+     => total size: [50] (IBM)
+ --------------------
+ - qubits_num: 4, using gates: [rz,x,cx,h]
+ - circuit depth: 37 - (small)
+ - circuit cycle: 79
+
+Circuit: <../data/data_ibm.qasm> after optimization:
+Circuit Info: 
+ - circuit: x-cx-h-x-cx-cx-cx-cx-cx-cx-cx-cx-x-x-cx-cx-cx-h-rz-cx-h-cx-x-cx-cx-x-cx-cx-h-rz-h-cx-h-x-cx-cx-cx-x-cx-x-cx-x-cx-cx-cx-h 
+     => total size: [46] (IBM)
+ --------------------
+ - qubits_num: 4, using gates: [rz,x,cx,h]
+ - circuit depth: 31 - (small)
+ - circuit cycle: 73
+

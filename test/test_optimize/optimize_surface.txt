@@ -1,0 +1,22 @@
+Try load and optimize <../data/data_surface.qasm>: 
+Start Timer: [Init Circuit]
+End Timer [Init Circuit]:  0.001018524169921875
+
+Circuit: <../data/data_surface.qasm> without optimization:
+Circuit Info: 
+ - circuit: x-ry-cz-ry-ry-z-x-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-cz-ry-x-x-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-z-rz-ry-z-ry-cz-ry-ry-z-ry-cz-ry-ry-z-x-ry-cz-ry-ry-cz-ry-x-ry-cz-ry-ry-cz-ry-ry-z-rz-ry-z-ry-cz-ry-ry-z-x-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-cz-ry-x-ry-cz-ry-x-ry-cz-ry-x-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-z 
+     => total size: [117] (Surface)
+ --------------------
+ - qubits_num: 4, using gates: [x,ry,z,rz,cz]
+ - circuit depth: 75 - (small)
+ - circuit cycle: 146
+
+Circuit: <../data/data_surface.qasm> after optimization:
+Circuit Info: 
+ - circuit: x-ry-cz-ry-ry-z-x-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-cz-ry-x-x-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-z-rz-ry-z-z-ry-ry-cz-ry-z-ry-ry-cz-ry-x-ry-cz-ry-ry-cz-ry-x-ry-cz-ry-ry-cz-ry-ry-z-rz-ry-z-ry-cz-ry-ry-z-x-ry-cz-ry-ry-cz-ry-ry-cz-ry-x-ry-cz-ry-x-ry-cz-ry-x-ry-cz-ry-ry-cz-ry-ry-cz-ry-ry-z 
+     => total size: [111] (Surface)
+ --------------------
+ - qubits_num: 4, using gates: [x,ry,z,rz,cz]
+ - circuit depth: 62 - (small)
+ - circuit cycle: 138
+
