@@ -9,3 +9,6 @@ __pycache__
 desktop.ini
 /*.qasm
 log.txt
+
+# exclude
+!test/data
