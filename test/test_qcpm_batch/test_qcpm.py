@@ -1,6 +1,7 @@
-from turtle import circle
-from qcpm import QCPatternMapper
+import sys
+sys.path.append('../../')
 
+from qcpm import QCPatternMapper
 
 
 """
@@ -8,7 +9,8 @@ from qcpm import QCPatternMapper
         - log: eg 'log.txt', path of output log file. (for single file) default ''
         - logs: log files' output dir default './log/'
 """
-QCPM = QCPatternMapper()
+QCPM = QCPatternMapper(logs='./logs/')
+
 
 # solving single file:
 """
@@ -24,24 +26,13 @@ QCPM = QCPatternMapper()
 # QCPM.execute(circuit_path, './circuit_after', 
 #     strategy='random', system='IBM', metric='depth')
 
-
 # solving files in batch mode(dir to dir):
 # input_dir / output_dir
 config = {
-    # 'logs': './logs/', # for files
     'stat': './', # csv path
-    # 'strategy': 'MCM',
-    'system': ["Surface", "IBM"],
-    # 'system': ["IBM", "U"], # ['IBM', 'Surface', 'U']
-    # 'system': ["U", "Surface"],
-    # 'system': ["Surface", "U"],
-    # 'depth_size': 'medium', # default all
+    'system': 'IBM',
+    'depth_size': 'small', # default all
     'metric': 'cycle' # cycle or depth
 }
-# QCPM.execute('../data/stat-test/', '../data/stat-output/', **config)
-# QCPM.execute('../data/simulation-test/', '../data/simulation-output/', **config)
-# QCPM.execute('../data/shor', '../shor_result_U', **config)
-# QCPM.execute('../shor_result_U', '../shor_result_IBM', **config)
-# QCPM.execute('../shor_result_U', '../shor_result_surface', **config)
-# QCPM.execute('../shor_result_surface', '../shor_result_U', **config)
-QCPM.execute('../data/single_cz', '../cz_result', **config)
+
+QCPM.execute('../data/simulation-test/', './simulation-output/', **config)
