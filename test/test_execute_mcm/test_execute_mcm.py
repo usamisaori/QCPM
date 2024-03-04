@@ -14,7 +14,7 @@ file = open('execute_mcm_ibm.txt', 'w')
 sys.stdout = file
 
 # load circuit(system: IBM)
-circuit_path = 'data_ibm.qasm'
+circuit_path = '../data/data_ibm.qasm'
 print(f'Try execute mapping on <{circuit_path}>: ')
 circuit = Circuit(circuit_path)
 mapper.execute(circuit, strategy='MCM')
@@ -26,7 +26,7 @@ file = open('execute_mcm_surface.txt', 'w')
 sys.stdout = file
 
 # load circuit(system: Surface)
-circuit_path = 'data_surface.qasm'
+circuit_path = '../data/data_surface.qasm'
 print(f'Try execute mapping on <{circuit_path}>: ')
 circuit = Circuit(circuit_path, system='Surface')
 mapper.execute(circuit, strategy='MCM')

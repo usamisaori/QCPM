@@ -1,6 +1,6 @@
-Try execute mapping on <data_surface.qasm>: 
+Try execute mapping on <../data/data_surface.qasm>: 
 Start Timer: [Init Circuit]
-End Timer [Init Circuit]:  0.03186798095703125
+End Timer [Init Circuit]:  0.024001598358154297
 
 Start Timer: [Execute Mapping]
 
@@ -84,7 +84,7 @@ Pattern: 6
 
 Candidates: 
 
-----End Timer [Find Candidates]:  0.0009970664978027344
+----End Timer [Find Candidates]:  0.0
 
 ----Start Timer: [Generate Plans]
 
@@ -143,5 +143,5 @@ Circuit after: xYeYYzxYeYYeYYeYYeYYeYYeYYeYYeYxxYeYYeYYeYYzZYzzYYeYzYYeYxYeYYeYx
 
 ----End Timer [apply mapping plan]:  0.0
 
-End Timer [Execute Mapping]:  0.0009970664978027344
+End Timer [Execute Mapping]:  0.0
 
